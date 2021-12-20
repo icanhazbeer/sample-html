@@ -2,7 +2,7 @@ name: sample-html
 static_sites:
 - environment_slug: html
   github:
-    branch: main
+    branch: mine
     deploy_on_push: true
-    repo: digitalocean/sample-html
+    repo: icanhazbeer/sample-html
   name: sample-html
