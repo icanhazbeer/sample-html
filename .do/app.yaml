@@ -1,8 +1,19 @@
-name: sample-html
+alerts:
+- rule: DEPLOYMENT_FAILED
+- rule: DOMAIN_FAILED
+domains:
+- domain: stopitandgetsome.help
+  type: PRIMARY
+  zone: stopitandgetsome.help
+name: getsome
+region: nyc
 static_sites:
 - environment_slug: html
   github:
     branch: mine
     deploy_on_push: true
     repo: icanhazbeer/sample-html
-  name: sample-html
+  name: getsome
+  routes:
+  - path: /
+  source_dir: /
